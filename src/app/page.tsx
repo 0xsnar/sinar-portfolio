@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowUpRight, Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
 
 import { PixelCat } from '@/components/pixel-cat';
 import { SiteNav } from '@/components/site-nav';
@@ -313,20 +313,30 @@ export default async function Home() {
 
         <a
           className="contact-button"
-          href={`mailto:${data.profile?.email || 'hello@sinar.dev'}`}
+          href="https://wa.me/6288224189601"
+  target="_blank"
+  rel="noopener noreferrer"
+
         >
-          START A CONVERSATION <ArrowUpRight />
+          START A CONVERSATION <MessageCircle />
         </a>
 
         <footer>
           <a href="https://github.com/0xsnar">
             <Github /> GITHUB
           </a>
-          <a href="https://linkedin.com">
+          <a href="https://www.linkedin.com/in/sinar-public-kautsar-adhiluhur-93b69538b">
             <Linkedin /> LINKEDIN
           </a>
           <a
-            href={`mailto:${data.profile?.email || 'hello@sinar.dev'}`}
+  href="https://wa.me/6288224189601"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <MessageCircle /> WHATSAPP
+</a>
+          <a
+            href={`mailto:${data.profile?.email || 'snrypblc@gmail.com'}`}
           >
             <Mail /> EMAIL
           </a>
