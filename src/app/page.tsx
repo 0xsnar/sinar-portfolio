@@ -62,6 +62,12 @@ export default async function Home() {
         'Git',
       ];
 
+      const phoneNumber = "6281234567890";
+
+const message = "Halo Sinar! Saya tertarik untuk bekerja sama. Saya ingin bertanya mengenai jasa pembuatan website yang kamu tawarkan.";
+
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`; 
+
   return (
     <main>
       <SiteNav />
@@ -313,10 +319,9 @@ export default async function Home() {
 
         <a
           className="contact-button"
-          href="https://wa.me/6288224189601"
-  target="_blank"
-  rel="noopener noreferrer"
-
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           START A CONVERSATION <MessageCircle />
         </a>
